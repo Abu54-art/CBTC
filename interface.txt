@@ -1,18 +1,18 @@
 import java.util.*;
-	public class ATM {
+	public class ENTRANCE {
 	    static Scanner sc = new Scanner(System.in);
 	    static ArrayList<String> history = new ArrayList<String>();
 
 	    static int balance = 50000;
 
-	    static String userid = "Manoj143";
+	    static String userid = "Rahul365";
 	    static int userpin = 5555;
 
 
 	    public static void main(String[] args) {
 
 	        System.out.println("===================");
-	        System.out.println("Welcome to the ATM");
+	        System.out.println("Welcome to the ENTRANCE");
 	        System.out.println("===================");
 
 
