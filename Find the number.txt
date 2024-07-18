@@ -1,7 +1,7 @@
 import java.util.Random;
 	import java.util.Scanner;
 
-	public class GuessTheNumber {
+	public class FindTheNumber {
 	    public static void main(String[] args) {
 	        Scanner scanner = new Scanner(System.in);
 	        Random random = new Random();
@@ -12,7 +12,7 @@ import java.util.Random;
 	        int maxAttempts = 7;
 	        int totalScore = 0;
 
-	        System.out.println("Welcome to the Guess the Number game!");
+	        System.out.println("Welcome to the Find the Number game!");
 	        System.out.println("You have " + numberOfRounds + " rounds to play.");
 
 	        for (int round = 1; round <= numberOfRounds; round++) {
@@ -23,12 +23,12 @@ import java.util.Random;
 	            System.out.println("Guess the number between " + lowerBound + " and " + upperBound + ".");
 
 	            while (attempts < maxAttempts) {
-	                System.out.print("Enter your guess: ");
+	                System.out.print("Enter your guess number : ");
 	                int userGuess = scanner.nextInt();
 	                attempts++;
 
 	                if (userGuess == targetNumber) {
-	                    System.out.println("Congratulations! You guessed it right.");
+	                    System.out.println("Congratulations! You found it right.");
 	                    score = maxAttempts - attempts + 1;
 	                    totalScore += score;
 	                    break;
